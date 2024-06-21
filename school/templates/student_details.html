@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Student Details</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Standard</th>
+        <th>Section</th>
+      </tr>
+      {% for student in students %}
+      <tr>
+        <td>{{student.name}}</td>
+        <td>{{student.age}}</td>
+        <td>{{student.standard}}</td>
+        <td>{{student.section}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
